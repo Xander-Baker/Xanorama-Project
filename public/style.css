@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+:root{
+    --primary: #210F13;
+    --white: #fefefe;
+    --darkwhite: #4e4e4e;
+    --darkgrey: #0E0608;
+    --grey: #1D0C10;
+    --lightprimary: #A13B51;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--magnolia);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#backgroundImage{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+
+#backgroundImage::after{
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(#210F13,rgba(0, 0, 0, 0.7));
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    
+}
+
+* button{
+    background-color: var(--white);
+    color: var(--primary);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+* button:hover{
+    background-color: var(--lightprimary);
+    color: var(--white);
+}
+
+* select{
+    background-color: var(--white);
+    color: var(--primary);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+* option{
+    background-color: var(--white);
+    color: var(--primary);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+header{
+    background-color: var(--darkgrey);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    position: relative;
+    margin: 5% auto;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--lightprimary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.mapScreen{
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+}
+
+td {
+    height: 12px;
+    width: 15px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.available {
+    background-color: var(--white);
+}
+.occupied {
+    background-color: var(--darkwhite);
+}
+.selected {
+    background-color: var(--lightprimary);
+}
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seatMenu{
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkgrey);
+    opacity: 0.9;
+    height: 600px;
+    width: 1500px;
+
+}
+
+#seatMenuInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#seatInfo{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#seatMapMenu{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#seatMapContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    background-color: var(--grey);
+    border: var(--trueblack) solid 3px;
+
+}
+
+#seatMap{
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#seatSelection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+
+#buyBtn.disabled {
+    background-color: var(--darkwhite);
+    color: var(--white);
+    cursor: not-allowed;
+}
+
+
+#buyTicket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.vl{
+    border-right: #A13B51 solid 3px;
+    height: 250px;
+    margin: 0 20px;
+}
+
