@@ -4,9 +4,7 @@
 <p>This project is a ticket booking style webpage to book cinema tickets. The user can select a seat in the room and view it in a 3D virtual environment. Occupied seats are also shown in the 3D environment. The screens number of rows and columns are loaded in from a JSON file, as well as which seats are occupied. A 2D and 3D mapping of the seats is then generated from this data. The user can “Book” their selected seat by pressing the “Book Ticket” button. On doing this, their seat is added to the JSON file as an occupied seat, and will appear as so when reloading the 2D or 3D mapping. The website was created using standard HTML, CSS, and JavaScript. The 3D environment was created using the Three.JS library for JavaScript. Communication between the frontend and backend was made possible using the express library for JavaScript. This server serves requests for data from the JSON file.</p>
 
 <h2>Video Demo</h2>
-[![The Xanorama - Demo]          // Title
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
-(https://youtu.be/xAR4VPRN9e0  "The Xanorama - Demo")  
+<iframe width="443" height="240" src="https://www.youtube.com/embed/xAR4VPRN9e0" title="The Xanorama - Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <h2>How to Run</h2>
 <p>Open a new command prompt window at the projects directory and run the command “node server.js”. After this open “localhost:3000” in a browser.</p>
